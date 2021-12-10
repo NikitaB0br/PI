@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Сайт Бобра</title>
+    <link rel="stylesheet" href="cssbobra.css" />
+  </head>
+  <body>
+
+  <main>
+    <H2>Табличка Бобра</H2>
+    <table id="table" class="table table-bordered">
+      <thead>
+      <tr>
+        <th>Ф.И.О студента</th>
+        <th>Дата рождения</th>
+        <th>Группа</th>
+        <th>Номер телефона</th>
+        <th>Форма обучения</th>
+        <th>Удалить</th>
+        <th>Изменить</th>
+      </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <a target="_blank" href="" class="add-btn">Добавить</a>
+
+    <form class="add-form" action="">
+      <h3>Добавить ученика</h3>
+      <span class="close"></span>
+      <label><input class="name" type="text" />ФИО</label>
+      <label><input class="date" type="date" />Дата рождения</label>
+      <label><input class="group" type="text" />Группа</label>
+      <label><input class="phone" type="number" />Номер телефона</label>
+      <label><input class="education-form" type="text" />Форма обучения</label>
+      <button type="submit" class="add-form-btn">Добавить</button>
+    </form>
+
+    <div class="delete-wrapper">
+      <h2>Вы действительно хотите удалить?</h2>
+      <span class="close"></span>
+      <div class="btn-wrap">
+        <button id="yes">Да</button>
+        <button id="no">Нет</button>
+      </div>
+    </div>
+
+      <form class="change-form">
+      <h3>Изменить ученика</h3>
+        <span class="close"></span>
+      <label><input class="name" type="text" />ФИО</label>
+      <label><input class="date" type="date" />Дата рождения</label>
+      <label><input class="group" type="text" />Группа</label>
+      <label><input class="phone" type="number" />Номер телефона</label>
+      <label><input class="education-form" type="text" />Форма обучения</label>
+      <button class="submit-change-btn" type="submit">Изменить</button>
+    </form>
+  </main>
+  <footer>&copy; Никита Бобр  </footer>
+    <script src="javabobra.js"></script>
+  </body>
+</html>

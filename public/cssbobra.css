@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+  font-family: "Comfortaa", sans-serif;
+}
+main {
+  height: 93vh;
+}
+table {
+  /*outline: 1px solid black;*/
+  width: 100%;
+}
+th {
+  /*outline: 1px solid black;*/ /*#cecdcd*/
+}
+tr {
+  border-spacing: 0;
+  text-align: center;
+  height: 30px;
+  background-color: #ececec;
+}
+
+.table {
+  border: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.table tbody td {
+  text-align: left;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 10px 15px;
+  font-size: 14px;
+  vertical-align: top;
+}
+.table thead th {
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  padding: 10px 15px;
+  background: rgba(184, 224, 231, 0.8);
+  font-size: 14px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.table thead tr th:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.table thead tr th:last-child {
+  border-radius: 0 8px 8px 0;
+}
+.table tbody tr:nth-child(even) {
+  background: #f3f3f3;
+}
+.table tbody tr td:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.table tbody tr td:last-child {
+  border-radius: 0 8px 8px 0;
+}
+td,
+th {
+  border-bottom: 1px solid gray;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: #497ddd;
+}
+.change {
+  display: block;
+  position: relative;
+}
+
+.delete-wrapper {
+  /*visibility: hidden;*/
+  top: 50%;
+  width: 60%;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 3;
+  flex-direction: column;
+  display: none;
+  align-items: center;
+}
+
+.delete-wrapper h2 {
+  text-align: center;
+}
+.add-form,
+.change-form {
+  /*visibility: hidden;*/
+  display: none;
+  z-index: 2;
+  background-color: #fff;
+  position: absolute;
+  margin-left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 350px;
+  padding: 5px;
+  outline: 1px solid black;
+}
+label,
+button {
+  margin: 5px;
+  display: block;
+}
+button {
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+input {
+  margin-right: 3px;
+}
+.btn-wrap {
+  display: flex;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+}
+.close:after,.close:before {
+  position: absolute;
+  left: 5px;
+  content: " ";
+  height: 15px;
+  width: 2px;
+  background-color: black;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
